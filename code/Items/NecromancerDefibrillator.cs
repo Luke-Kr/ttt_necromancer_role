@@ -11,7 +11,9 @@ namespace TerrorTown
     public partial class NecromancerDefibrillator : Weapon, IEquipment
     {
         public override AmmoType PrimaryAmmoType => AmmoType.Spare;
-        public override int MaxPrimaryAmmo => 2;
+        [ConVar.Replicated("necromancer_zombie_charges", Min = 1, Help = "Amount of charges the Necro Defibrillator has, default is 2.", Saved = true)]
+        public static int ZombieCharges { get; set; } = 2;
+        public override int MaxPrimaryAmmo => ZombieCharges;
         public float ChargeTime = 5f;
         public bool Charging;
         private NecromancerDefibrillatorUI UIPanel;
