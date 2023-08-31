@@ -9,7 +9,7 @@ namespace TerrorTown
     public class NecroManager
     {
         // Chance that one of the innocents will be a necromancer. Default is 20%.
-        [ConVar.Replicated("necromancer_role_chance", Max = 1, Min = 0, Help = "Chance that one of the traitors will be an idiot. Default is 20%.", Saved = true)]
+        [ConVar.Replicated("necromancer_role_chance", Max = 1, Min = 0, Help = "Chance that one of the innocents will be a necromancer. Default is 20%.", Saved = true)]
         public static float NecromancerChance { get; set; } = 0.20f;
 
         [Event("Game.Team.PostSelection")]
