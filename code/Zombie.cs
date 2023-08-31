@@ -63,6 +63,7 @@ namespace TerrorTown
         public override TeamAlignment TeamAlignment => (TeamAlignment) 4;
         public override TeamMemberVisibility TeamMemberVisibility => TeamMemberVisibility.Alignment | TeamMemberVisibility.PublicWhenConfirmedDead;
         public override string VictimKillMessage => "You were killed by {0}. They are a Zombie.";
+        public override string RoleDescription => "BRAINZZZZ.";
         public override string IdentifyString => "{0} found the body of {1}. They were a Zombie.";
         public override int TeamPlayerMaximum => 0;
         public override bool CanSeeMIA => true;
