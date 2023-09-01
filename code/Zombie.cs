@@ -18,22 +18,6 @@ namespace TerrorTown
         public void TickServer()
         {
             Game.AssertServer();
-            //foreach (Entity item in new List<Entity>(Entity.Inventory.Items))
-            //{
-            //    if (!(item.GetType() == typeof(ZombieDeagle)) && !(item.GetType() == typeof(Holstered)))
-            //    {
-
-            //        if (item.GetType() == typeof(MagnetoStick) || item.GetType() == typeof(Crowbar))
-            //        {
-            //            item.Delete();
-            //        }
-            //        else
-            //        {
-            //            Entity.Inventory.DropItem(item);
-            //        }
-
-            //    }
-            //}
             
             if (Growl)
             {
